@@ -1,0 +1,47 @@
+{
+  "name": "spicetify-enhanced-downloader",
+  "version": "1.0.0",
+  "description": "Advanced Spotify download extension for Spicetify with track-level parallelism and multi-content support",
+  "main": "Extensions/download-server.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "start": "node Extensions/server-manager.js --start",
+    "stop": "node Extensions/server-manager.js --stop",
+    "status": "node Extensions/server-manager.js --status",
+    "install-extension": "spicetify config extensions song-downloader-enhanced-artist.js && spicetify apply",
+    "uninstall-extension": "spicetify config extensions song-downloader-enhanced-artist.js- && spicetify apply",
+    "postinstall": "node setup.js"
+  },
+  "keywords": [
+    "spotify",
+    "download",
+    "spicetify",
+    "extension",
+    "music",
+    "parallel",
+    "enhancement"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/spicetify-enhanced-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/spicetify-enhanced-downloader/issues"
+  },
+  "homepage": "https://github.com/yourusername/spicetify-enhanced-downloader#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "spicetify": ">=2.0.0"
+  },
+  "requirements": {
+    "spotdl": ">=4.0.0",
+    "spicetify": ">=2.0.0",
+    "node": ">=14.0.0"
+  }
+}
