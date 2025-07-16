@@ -1,0 +1,11 @@
+{
+  "downloadDirectory": "CHANGE_ME",
+  "maxConcurrentDownloads": 3,
+  "serverPort": 3001,
+  "apiLimit": 300,
+  "fileNamingFormat": "{title} - {artist}.{ext}",
+  "createArtistFolders": true,
+  "createAlbumFolders": true,
+  "createPlaylistFolders": true,
+  "autoStartServer": true
+}
