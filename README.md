@@ -73,12 +73,10 @@ D:\HISYAM\Music\Spotify Downloads\
 
 1. **Open Spotify**
 2. **Start the download server** by either:
-   - Double clicking on `download-server.js`:
+   - Double clicking on `start-download-server.bat`:
 ```javascript
    or
-   - '''bash
-     node server-manager.js --start
-     '''
+   - 'node server-manager.js --start'
 3. **Right-click** on any:
    - Track → Downloads individual song
    - Album → Downloads all tracks in parallel
@@ -119,22 +117,31 @@ Invoke-RestMethod -Uri "http://localhost:3001/status" -Method Get
 ## 🔧 Configuration
 
 ### Change Download Directory:
-Edit `download-server.js`:
+Edit `config.json`:
 ```javascript
 const BASE_DOWNLOAD_PATH = 'D:\\Your\\Custom\\Path';
 ```
+```bash
+spicetify apply
+```
 
 ### Adjust Parallel Downloads:
-Edit `download-server.js`:
+Edit `config.json`:
 ```javascript
 const MAX_CONCURRENT_DOWNLOADS = 5; // Default: 3
 ```
+```bash
+spicetify apply
+```
 
 ### Change API Limits:
-Edit `download-server.js`:
+Edit `config.json`:
 ```javascript
 // For playlists/albums
 apiUrl = `https://api.spotify.com/v1/albums/${id}/tracks?limit=500`;
+```
+```bash
+spicetify apply
 ```
 
 ## 🎵 How It Works
@@ -181,6 +188,7 @@ spicetify-enhanced-downloader/
 │   ├── server-manager.js (Server lifecycle)
 │   ├── start-download-server.bat (Manual start)
 │   └── stop-download-server.bat (Manual stop)
+├── config.json
 ├── README.md
 ├── INSTALL.md
 └── LICENSE
