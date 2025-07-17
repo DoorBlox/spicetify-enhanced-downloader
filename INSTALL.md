@@ -109,7 +109,7 @@ spicetify config extensions song-downloader-enhanced-artist.js-
 spicetify apply
 
 # Remove files
-rm -rf "%APPDATA%\spicetify\Extensions\config.json*
+rm -rf "%APPDATA%\spicetify\Extensions\config.json"
 rm -rf "%APPDATA%\spicetify\Extensions\song-downloader-*"
 rm -rf "%APPDATA%\spicetify\Extensions\download-server.js"
 rm -rf "%APPDATA%\spicetify\Extensions\server-manager.js"
