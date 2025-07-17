@@ -118,7 +118,7 @@ Invoke-RestMethod -Uri "http://localhost:3001/status" -Method Get
 ### Change Download Directory:
 Edit `config.json`:
 ```javascript
-const BASE_DOWNLOAD_PATH = 'D:\\Your\\Custom\\Path';
+  "downloadDirectory": "D:\\Your\\Custom\\Folder",
 ```
 ```bash
 spicetify apply
@@ -127,17 +127,21 @@ spicetify apply
 ### Adjust Parallel Downloads:
 Edit `config.json`:
 ```javascript
-const MAX_CONCURRENT_DOWNLOADS = 5; // Default: 3
+  "maxConcurrentDownloads": 5, // Default: 3
 ```
 ```bash
 spicetify apply
 ```
 
 ### Change API Limits:
-Edit `config.json`:
+Edit `download-server.js`:
 ```javascript
 // For playlists/albums
 apiUrl = `https://api.spotify.com/v1/albums/${id}/tracks?limit=500`;
+```
+Edit `config.json`:
+```javascript
+  "apiLimit": 500,
 ```
 ```bash
 spicetify apply
