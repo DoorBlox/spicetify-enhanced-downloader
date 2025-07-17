@@ -43,15 +43,14 @@ cp Extensions/* ~/.config/spicetify/Extensions/
 ## 4. Ensure your directory looks like:
 
 ```
-%APPDATA%/
-└── spicetify/
-    ├── Extensions/
-    │   ├── song-downloader-enhanced-artist.js (Main extension)
-    │   ├── download-server.js (HTTP server)
-    │   ├── server-manager.js (Server lifecycle)
-    │   ├── start-download-server.bat (Manual start)
-    │   └── stop-download-server.bat (Manual stop)
-    └── config.json
+%APPDATA%/spicetify/
+├── Extensions/
+│   ├── song-downloader-enhanced-artist.js (Main extension)
+│   ├── download-server.js (HTTP server)
+│   ├── server-manager.js (Server lifecycle)
+│   ├── start-download-server.bat (Manual start)
+│   └── stop-download-server.bat (Manual stop)
+└── config.json
 ```
 
 ### 5. Configure Spicetify
