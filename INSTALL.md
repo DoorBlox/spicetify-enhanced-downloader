@@ -94,8 +94,8 @@ Edit `config.json`:
 ```
 ```javascript
 // API request limits
-//Edit `Extensions\download-server.js`:
 
+//Edit `Extensions\download-server.js`:
 // For playlists/albums
 apiUrl = `https://api.spotify.com/v1/albums/${id}/tracks?limit=500`;
 
