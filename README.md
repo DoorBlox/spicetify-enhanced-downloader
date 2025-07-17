@@ -73,8 +73,7 @@ D:\HISYAM\Music\Spotify Downloads\
 
 1. **Open Spotify**
 2. **Start the download server** by either:
-   - Double clicking on `start-download-server.bat`:
-```javascript
+   - Double clicking on `start-download-server.bat`
    or
    - 'node server-manager.js --start'
 3. **Right-click** on any:
