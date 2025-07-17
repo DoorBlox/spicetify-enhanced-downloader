@@ -1,6 +1,6 @@
 # 🎵 Spicetify Enhanced Downloader
 
-An advanced Spotify download extension for Spicetify with **track-level parallelism**, **automatic server management**, and support for **tracks, albums, playlists, and artists**.
+An advanced Spotify download extension for Spicetify with **track-level parallelism**, support for **tracks, albums, playlists, and artists**.
 
 ## ✨ Features
 
@@ -11,7 +11,7 @@ An advanced Spotify download extension for Spicetify with **track-level parallel
 - **Artists** → Downloads top 10 tracks to `Artist Name/` folder
 
 ### ⚡ **Performance**
-- **Track-level parallelism** - Downloads 3 tracks simultaneously within albums/playlists
+- **Track-level parallelism** - Downloads 3 tracks simultaneously within albums/playlists, adjustable
 - **Smart queueing system** - Handles unlimited downloads
 - **3x faster** than sequential downloads for large collections
 
@@ -75,7 +75,7 @@ D:\HISYAM\Music\Spotify Downloads\
 2. **Start the download server** by either:
    - Double clicking on `start-download-server.bat`
    or
-   - 'node server-manager.js --start'
+   - `node server-manager.js --start`
 3. **Right-click** on any:
    - Track → Downloads individual song
    - Album → Downloads all tracks in parallel
