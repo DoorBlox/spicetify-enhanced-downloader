@@ -52,19 +52,24 @@ spicetify apply
 ### 5. Test Installation
 
 1. Open Spotify
-2. Right-click on any song
-3. Look for "Download" option
-4. Try downloading a track
+2. Start the download server by either:
+   - Double clicking on `start-download-server.bat`
+   or
+   - `node server-manager.js --start`
+3. Right-click on any song
+4. Look for "Download" option
+5. Try downloading a track
 
 ## Configuration
 
 ### Change Download Location
 
-Edit `Extensions/download-server.js`:
+Edit `config.json`:
 
 ```javascript
 const BASE_DOWNLOAD_PATH = 'C:\\Your\\Custom\\Path';
 ```
+`spicetify apply`
 
 ### Adjust Performance
 
@@ -75,6 +80,7 @@ const MAX_CONCURRENT_DOWNLOADS = 5;
 // API request limits
 const API_LIMIT = 300;
 ```
+`spicetify apply`
 
 ## Troubleshooting
 
@@ -103,6 +109,7 @@ spicetify config extensions song-downloader-enhanced-artist.js-
 spicetify apply
 
 # Remove files
+rm -rf "%APPDATA%\spicetify\Extensions\config.json*
 rm -rf "%APPDATA%\spicetify\Extensions\song-downloader-*"
 rm -rf "%APPDATA%\spicetify\Extensions\download-server.js"
 rm -rf "%APPDATA%\spicetify\Extensions\server-manager.js"
