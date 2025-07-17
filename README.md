@@ -42,7 +42,7 @@ D:\HISYAM\Music\Spotify Downloads\
 
 - **Spicetify** installed and configured
 - **Node.js** (for server management)
-- **spotdl** installed and accessible from PATH
+- **spotdl** (and FFmpeg) installed and accessible from PATH
 - **Windows** (PowerShell support)
 
 ## 📦 Installation
