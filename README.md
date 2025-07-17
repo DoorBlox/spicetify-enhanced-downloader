@@ -16,7 +16,6 @@ An advanced Spotify download extension for Spicetify with **track-level parallel
 - **3x faster** than sequential downloads for large collections
 
 ### 🎯 **User Experience**
-- **Auto-start server** - Works immediately when Spotify opens
 - **Perfect file naming** - `Song Name - Artist.mp3` format
 - **Real-time notifications** - Progress updates in Spotify
 - **Automatic retries** - Handles failures gracefully
@@ -73,19 +72,25 @@ D:\HISYAM\Music\Spotify Downloads\
 ## 🎯 Usage
 
 1. **Open Spotify**
-2. **Right-click** on any:
+2. **Start the download server** by either:
+   - Double clicking on `download-server.js`:
+```javascript
+   or
+   - '''bash
+     node server-manager.js --start
+     '''
+3. **Right-click** on any:
    - Track → Downloads individual song
    - Album → Downloads all tracks in parallel
    - Playlist → Downloads all tracks in parallel
    - Artist → Downloads top 10 tracks
-3. **Select "Download"** from context menu
-4. **Watch notifications** for progress updates
+4. **Select "Download"** from context menu
+5. **Watch notifications** for progress updates
 
 ## 🛠️ Server Management
 
 The system includes automatic server management:
 
-- **Auto-start**: Server starts automatically when Spotify opens
 - **Health checks**: Automatic server status monitoring
 - **Manual control**: Use batch files for manual start/stop
 
