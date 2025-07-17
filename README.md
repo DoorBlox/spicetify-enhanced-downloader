@@ -49,7 +49,7 @@ D:\HISYAM\Music\Spotify Downloads\
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/spicetify-enhanced-downloader.git
+   git clone https://github.com/DoorBlox/spicetify-enhanced-downloader
    cd spicetify-enhanced-downloader
    ```
 
