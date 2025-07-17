@@ -67,7 +67,7 @@ spicetify apply
 Edit `config.json`:
 
 ```javascript
-const BASE_DOWNLOAD_PATH = 'C:\\Your\\Custom\\Path';
+  "downloadDirectory": "D:\\Your\\Custom\\Path",
 ```
 `spicetify apply`
 
@@ -75,10 +75,11 @@ const BASE_DOWNLOAD_PATH = 'C:\\Your\\Custom\\Path';
 
 ```javascript
 // Number of simultaneous downloads
-const MAX_CONCURRENT_DOWNLOADS = 5;
+  "maxConcurrentDownloads": 3,
+
 
 // API request limits
-const API_LIMIT = 300;
+  "apiLimit": 300,
 ```
 `spicetify apply`
 
