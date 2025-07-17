@@ -34,12 +34,27 @@ cd spicetify-enhanced-downloader
 ```bash
 # Windows
 copy Extensions\* "%APPDATA%\spicetify\Extensions\"
+copy config.json "%APPDATA%\spicetify\"
 
 # Linux/macOS
 cp Extensions/* ~/.config/spicetify/Extensions/
 ```
 
-### 4. Configure Spicetify
+## 4. Ensure your directory looks like:
+
+```
+%APPDATA%/
+└── spicetify/
+    ├── Extensions/
+    │   ├── song-downloader-enhanced-artist.js (Main extension)
+    │   ├── download-server.js (HTTP server)
+    │   ├── server-manager.js (Server lifecycle)
+    │   ├── start-download-server.bat (Manual start)
+    │   └── stop-download-server.bat (Manual stop)
+    └── config.json
+```
+
+### 5. Configure Spicetify
 
 ```bash
 # Enable the extension
@@ -49,7 +64,7 @@ spicetify config extensions song-downloader-enhanced-artist.js
 spicetify apply
 ```
 
-### 5. Test Installation
+### 6. Test Installation
 
 1. Open Spotify
 2. Start the download server by either:
@@ -76,10 +91,16 @@ Edit `config.json`:
 ```javascript
 // Number of simultaneous downloads
   "maxConcurrentDownloads": 3,
-
-
+```
+```javascript
 // API request limits
-  "apiLimit": 300,
+//Edit `Extensions\download-server.js`:
+
+// For playlists/albums
+apiUrl = `https://api.spotify.com/v1/albums/${id}/tracks?limit=500`;
+
+//Edit `config.json`:
+  "apiLimit": 500,
 ```
 `spicetify apply`
 
